@@ -27,7 +27,6 @@ public final class Settings {
     private static String fakeJoin;
     private static boolean autoFakeJoinSilent;
     private static boolean worldChangeCheck;
-    private static int lightningEffectCount;
     private static boolean doubleSneakDuringVanishSwitchesGameMode = false;
     private static int doubleSneakDuringVanishSwitchesGameModeTimeBetweenSneaksInMS = 500;
     private static String doubleSneakDuringVanishSwitchesGameModeMessage = "&aGameMode changed!";
@@ -48,10 +47,6 @@ public final class Settings {
 
     public static String getFakeQuit() {
         return Settings.fakeQuit;
-    }
-
-    public static int getLightningCount() {
-        return Settings.lightningEffectCount;
     }
 
     public static boolean getWorldChangeCheck() {
@@ -88,9 +83,6 @@ public final class Settings {
                 config.set("enableTabControl", null);
                 config.set("updates.check", null);
             }
-            if ((ver <= 3)) {
-                config.set("effects.lightning.count", 30);
-            }
             if (ver <= 5) {
                 config.set("hooks.JSONAPI", null);
                 config.set("hooks.spoutcraft", null);
@@ -120,10 +112,6 @@ public final class Settings {
         Settings.doubleSneakDuringVanishSwitchesGameMode = config.getBoolean("double-sneak-during-vanish-switches-gamemode.enabled", false);
         Settings.doubleSneakDuringVanishSwitchesGameModeTimeBetweenSneaksInMS = config.getInt("double-sneak-during-vanish-switches-gamemode.max-ms-time-between-sneaks", 500);
         Settings.doubleSneakDuringVanishSwitchesGameModeMessage = config.getString("double-sneak-during-vanish-switches-gamemode.message", "&aGameMode changed!");
-        Settings.lightningEffectCount = config.getInt("effects.lightning.count", 30);
-        if (Settings.lightningEffectCount < 1) {
-            Settings.lightningEffectCount = 1;
-        }
         if (config.getBoolean("debug", false)) {
             Debuggle.itsGoTime(plugin);
         } else {

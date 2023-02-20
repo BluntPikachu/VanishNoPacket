@@ -11,16 +11,12 @@ fakeannounce:
     join: '%p joined the game.'
     quit: '%p left the game.'
 hooks:
-    essentials: false
+    essentials: true
     dynmap: false
     discordsrv: false
-    squaremap: false
+    squaremap: true
 permissionsupdates:
     checkonworldchange: false
-effects:
-    lightning:
-        count: 30
-
 permtest: false
 debug: false
 double-sneak-during-vanish-switches-gamemode:

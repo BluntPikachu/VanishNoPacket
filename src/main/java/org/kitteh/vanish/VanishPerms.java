@@ -36,26 +36,6 @@ public final class VanishPerms {
         return VanishPerms.getUser(player).getPreventOutgoingDamage();
     }
 
-    public static boolean canEffectBats(@NonNull Player player) {
-        return VanishPerms.getUser(player).getEffectBats();
-    }
-
-    public static boolean canEffectExplode(@NonNull Player player) {
-        return VanishPerms.getUser(player).getEffectExplode();
-    }
-
-    public static boolean canEffectFlames(@NonNull Player player) {
-        return VanishPerms.getUser(player).getEffectFlames();
-    }
-
-    public static boolean canEffectLightning(@NonNull Player player) {
-        return VanishPerms.getUser(player).getEffectLightning();
-    }
-
-    public static boolean canEffectSmoke(@NonNull Player player) {
-        return VanishPerms.getUser(player).getEffectSmoke();
-    }
-
     public static boolean canFakeAnnounce(@NonNull Player player) {
         return player.hasPermission("vanish.fakeannounce");
     }
@@ -120,21 +100,6 @@ public final class VanishPerms {
         return player.hasPermission("vanish.toggle.damageout");
     }
 
-    public static boolean canToggleEffectBats(@NonNull Player player) {
-        return player.hasPermission("vanish.effects.toggle.bats");
-    }
-
-    public static boolean canToggleEffectExplode(@NonNull Player player) {
-        return player.hasPermission("vanish.effects.toggle.explode");
-    }
-
-    public static boolean canToggleEffectFlames(@NonNull Player player) {
-        return player.hasPermission("vanish.effects.toggle.flames");
-    }
-
-    public static boolean canToggleEffectLightning(@NonNull Player player) {
-        return player.hasPermission("vanish.effects.toggle.lightning");
-    }
 
     public static boolean canToggleNoChat(@NonNull Player player) {
         return player.hasPermission("vanish.toggle.nochat");
@@ -164,9 +129,6 @@ public final class VanishPerms {
         return player.hasPermission("vanish.toggle.silentchests");
     }
 
-    public static boolean canToggleSmoke(@NonNull Player player) {
-        return player.hasPermission("vanish.effects.toggle.smoke");
-    }
 
     public static boolean canVanish(@NonNull Player player) {
         return player.hasPermission("vanish.vanish");
@@ -200,25 +162,6 @@ public final class VanishPerms {
         return VanishPerms.getUser(player).toggleOutgoingDamage();
     }
 
-    public static boolean toggleEffectBats(@NonNull Player player) {
-        return VanishPerms.getUser(player).toggleEffectBats();
-    }
-
-    public static boolean toggleEffectExplode(@NonNull Player player) {
-        return VanishPerms.getUser(player).toggleEffectExplode();
-    }
-
-    public static boolean toggleEffectFlames(@NonNull Player player) {
-        return VanishPerms.getUser(player).toggleEffectFlames();
-    }
-
-    public static boolean toggleEffectLightning(@NonNull Player player) {
-        return VanishPerms.getUser(player).toggleEffectLightning();
-    }
-
-    public static boolean toggleEffectSmoke(@NonNull Player player) {
-        return VanishPerms.getUser(player).toggleEffectSmoke();
-    }
 
     public static boolean toggleNoChat(@NonNull Player player) {
         return VanishPerms.getUser(player).toggleNoChat();
