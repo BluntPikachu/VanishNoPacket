@@ -24,11 +24,14 @@
         </profile>
     </profiles>
 
-    <scm>
-        <connection>scm:git:git://github.com/mbax/VanishNoPacket.git</connection>
-        <developerConnection>scm:git:ssh://git@github.com/mbax/VanishNoPacket.git</developerConnection>
-        <url>https://github.com/mbax/VanishNoPacket</url>
-    </scm>
+    <!-- deploy -->
+    <distributionManagement>
+        <repository>
+            <id>castaway</id>
+            <name>Castaway Repo</name>
+            <url>https://maven.castaway.gg/repository/castaway/</url>
+        </repository>
+    </distributionManagement>
 
     <repositories>
         <repository>
